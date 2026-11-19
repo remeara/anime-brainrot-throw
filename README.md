@@ -1,21 +1,22 @@
-# roblox-brainrot-01 starter
+# Brainrot Express: Grand Station Heist
 
-A working entry for make.fun's "Make the best AI Roblox brainrot game" bounty (roblox-brainrot-01), laid out as your
-repository: a Rojo project whose game is a grey square that moves with the arrow keys. It is a starting point, not a
-winner, and not yet the 3D game the bounty asks for: its square is drawn on the screen, not in Roblox's 3D world.
+[![make.fun](https://make.fun/badge/roblox-brainrot-01.svg)](https://make.fun/bounty/roblox-brainrot-01)
+[![rank](https://make.fun/badge/roblox-brainrot-01/remeara/anime-brainrot-throw/rank.svg)](https://make.fun/bounty/roblox-brainrot-01)
+[![reward](https://make.fun/badge/roblox-brainrot-01/remeara/anime-brainrot-throw/reward.svg)](https://make.fun/bounty/roblox-brainrot-01)
 
-- `main.ts` (Node 22, standard library only) hands the game in: it copies `game.rbxl`, `src/`, `screenshots/` and
-  `PLAY.json` to `/output`, leaving out every name that starts with a dot (such as `.gitkeep` or `.DS_Store`, which
-  fail an entry), and writes `/output/dossier.json` with `vendor/makefun-roblox.ts`, the kit's copy, unchanged.
-- `game.rbxl` is the place Rojo builds from `src/` and `default.project.json`; `screenshots/` holds three captures of
-  it; `PLAY.json` names no place yet, so the gate refuses the starter as it stands until it names your published one.
-- One of your screenshots must also be your game's first thumbnail on Roblox: the same picture, uploaded on the
-  Creator Dashboard with your game's icon.
-- `TOUR.json` is an example of the optional tour: for each screenshot, the keys that bring the game to that screen.
+A 3D Roblox brainrot tycoon and heist game built with Rojo and Luau, set inside a golden-hour grand clocktower railway station.
 
-Run it as the grader does, writing `out/` in place of `/output`:
+## Gameplay
 
-    mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+- **48 Original Railway Brainrots across 7 Rarity Tiers**: `Common` (8), `Uncommon` (8), `Rare` (7), `Epic` (7), `Legendary` (7), `Mythic` (6), and `Secret` (5).
+- **6 Income Mutations**: `Normal` (`1x`), `Brass-Plated` (`2x`), `Neon-Ticket` (`4x`), `Crystal-Steam` (`7x`), `Prism-Express` (`12x`), and `Chrono-Gold` (`25x`).
+- **Central Parade & VIP Platform**: Buy Brainrots marching down the red-carpeted central track (`[E]`), carry them above your head to the `DROP MAT` (`CARRY & DROP HERE`), and fill 12 velvet pedestals with live glowing Cash Collector Pads.
+- **Rival Heists & Pickpocket Defense**: Cross the tracks to steal from unlocked rival platforms (`[E]`), lock your emerald Brass Turnstile Laser Gate (`[L]`), and whack sneaky `Pickpocket Pigeon` / `Stowaway Raccoon` NPCs with your 3D Brass Conductor Mallet (`[F]`) for `+$65K`.
+- **Station Events, Upgrades, Quests & Rebirths**: Survive the `Runaway Express` steam locomotive hazard, cash in on `Golden Ticket Shower` mutated waves, track all 48 catches in the `[B]` Stamp Book, upgrade 5 tracks (`40` levels via `[U]`), complete 18 rotating Quests, and Rebirth (`[R]`) for permanent multipliers.
 
-The rules are on the bounty's page (/bounty/roblox-brainrot-01) and in the kit's RULES.txt,
-which gives every command in order (Before you submit, then Enter).
+## Local Build & Packaging
+
+```sh
+rojo build default.project.json --output game.rbxl
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+```

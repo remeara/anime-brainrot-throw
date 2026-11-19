@@ -1,1 +1,9 @@
-{"tour": 1, "steps": [{"screenshot": "1-start.png"}, {"screenshot": "2-play.png", "keys": ["Right"], "wait_ms": 1000}, {"screenshot": "3-end.png", "keys": ["Down"], "wait_ms": 1000}]}
+{
+  "tour": 1,
+  "steps": [
+    {"screenshot": "screenshots/1-cover-world.jpg", "keys": [], "wait_ms": 600, "call": {"module": "ServerScriptService.Server.TourShowcase", "fn": "ApplyScene", "arg": "cover", "on": "Server"}},
+    {"screenshot": "screenshots/2-heist-whack.jpg", "keys": [], "wait_ms": 600, "call": {"module": "ServerScriptService.Server.TourShowcase", "fn": "ApplyScene", "arg": "heist", "on": "Server"}},
+    {"screenshot": "screenshots/3-stamp-book.jpg", "keys": [], "wait_ms": 600, "call": {"module": "ServerScriptService.Server.TourShowcase", "fn": "ApplyScene", "arg": "stampbook", "on": "Server"}},
+    {"screenshot": "screenshots/4-runaway-locomotive.jpg", "keys": [], "wait_ms": 600, "call": {"module": "ServerScriptService.Server.TourShowcase", "fn": "ApplyScene", "arg": "locomotive", "on": "Server"}}
+  ]
+}
