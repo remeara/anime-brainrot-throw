@@ -1,5 +1,4 @@
-// Anime Brainrot Throw: 3D Throw-Food-For-Animals meets Steal a Brainrot with 12 Anime MC Pets.
-// Built with Rojo from src/ into game.rbxl; packages game.rbxl, src/, screenshots/, PLAY.json, and dossier.json.
+// A working roblox-brainrot-01 entry (Node 22, standard library only): the game is this directory's Rojo
 // project, built into game.rbxl with `rojo build default.project.json --output game.rbxl`, and the program
 // hands it in. It copies game.rbxl, src/, screenshots/ and PLAY.json from beside this file to /output and
 // writes /output/dossier.json, the summary the judge reads, with the vendored make.fun library. A starting
